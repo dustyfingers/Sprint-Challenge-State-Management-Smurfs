@@ -5,8 +5,10 @@ const NewSmurfForm = () => {
     return (
         <form>
             <input type="text" name="name" placeholder="Smurf name" />
-
-            <Link to="/"><button>DASHBOARD</button></Link>
+            <input type="text" name="age" placeholder="Smurf age" />
+            <input type="text" name="height" placeholder="Smurf height" />
+            <button>CREATE NEW SMURF</button>
+            <Link to="/"><button>BACK TO DASHBOARD</button></Link>
         </form>
     )
 }
