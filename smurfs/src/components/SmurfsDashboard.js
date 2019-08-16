@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 import SmurfContext from '../contexts/SmurfContext';
 
 const SmurfsDashboard = () => {
-    const { smurfs } = useContext(SmurfContext);
-    console.log(smurfs);
+    const smurfs = useContext(SmurfContext);
     return (
         <div>
             <h1>SMURFS!</h1>

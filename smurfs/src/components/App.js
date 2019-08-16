@@ -20,14 +20,14 @@ const App = () => {
 
   console.log(smurfs);
   return (
-    <div className="App">
-      <SmurfContext.Provider value={smurfs}>
+    <SmurfContext.Provider value={smurfs}>
+      <div className="App">
         <Switch>
           <Route exact path="/" component={SmurfsDashboard} />
           <Route exact path="/new-smurf" component={NewSmurfForm} />
         </Switch>
-      </SmurfContext.Provider>
-    </div>
+      </div>
+    </SmurfContext.Provider >
   );
 }
 
